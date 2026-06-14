@@ -3,7 +3,7 @@
 Merge multimodal sensor data (multi-recording) : Organize multiple recordings into a single summary table containing
 the `recording_id`.
 Sample directory structure: Each dataset corresponds to a folder containing "gaze/hands/pose/PSR_labels.csv".
-   recordings/
+   data/
      rec01/ gaze.csv hands.csv pose.csv PSR_labels.csv
      rec02/ ...
      rec03/ ...
