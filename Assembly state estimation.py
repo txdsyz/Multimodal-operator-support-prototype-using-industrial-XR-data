@@ -1,4 +1,17 @@
+'''
+Set DATA_DIR to the folder that holds the prepared data.
+Expected structure (produced by merge.py and dinov2_rgb.py):
+  DATA_DIR/
+    train/merge.csv               #motion features, which is outputted from the Merge_data.py, for all training recordings
+    train/dinov2_feats.csv        #DINOv2 RGB features for training, which is outputted from thedinov2_tgb.py
+    test/test.csv                 #motion features, test recording, which is outputted from the Merge_data.py, for test recordings
+    test/dinov2_feats_test.csv    #DINOv2 RGB features for test, which is outputted from thedinov2_tgb.py
+    test/AR_labels.csv            #AR labels of the test recording (for Stall indicator in Part B)
+Edit this one line to your own path; everything else is derived from it.
+'''
+
 #%%
+import os
 import pandas as pd, numpy as np, warnings
 warnings.filterwarnings("ignore")
 from lightgbm import LGBMClassifier
@@ -6,10 +19,13 @@ from sklearn.metrics import f1_score, confusion_matrix
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-TRAIN_CSV      = r"E:\uu\others\phd apply\interview\XR reality- UU\final\Data for technical task\Data for technical task\train\PartA\merge.csv"
-TRAIN_DINOV2   = r"E:\uu\others\phd apply\interview\XR reality- UU\final\Data for technical task\Data for technical task\train\PartA\dinov2_feats.csv"
-TEST_CSV       = r"E:\uu\others\phd apply\interview\XR reality- UU\final\Data for technical task\Data for technical task\test\PartA_test\test.csv"
-TEST_DINOV2    = r"E:\uu\others\phd apply\interview\XR reality- UU\final\Data for technical task\Data for technical task\test\PartA_test\dinov2_feats_test.csv"
+DATA_DIR = "data" 
+
+TRAIN_CSV    = os.path.join(DATA_DIR, "train", "merge.csv")
+TRAIN_DINOV2 = os.path.join(DATA_DIR, "train", "dinov2_feats.csv")
+TEST_CSV     = os.path.join(DATA_DIR, "test", "test.csv")
+TEST_DINOV2  = os.path.join(DATA_DIR, "test", "dinov2_feats_test.csv")
+AR_PATH      = os.path.join(DATA_DIR, "test", "AR_labels.csv")
 
 W=30
 CORR_THRESH=0.9
