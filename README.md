@@ -6,6 +6,9 @@ HoloLens 2 egocentric data (IndustReal). It has two parts:
 (2) Operator stall indicator detects abnormal hesitation at the current step, measured against each operator's own baseline.
 
 
+A full description of the problem formulation, method, results, and limitations is in the
+report (report.pdf)
+
 
 How to run?
 
