@@ -19,22 +19,26 @@ The scripts run in order. Steps 1 and 2 prepare the data; steps 3 and 4 are the 
 
 Step 1: Merge sensor data 
 Place the recording folders under data/ (each with gaze.csv, hands.csv, pose.csv,
-PSR_labels.csv), then run Merge_data.py. This produces the merged motion table.//
+PSR_labels.csv), then run Merge_data.py. This produces the merged motion table.
+
 
 Step 2: Extract RGB features (Google Colab, GPU)
 Upload the merged table and the RGB image frames to Google Drive, then run dinov2_rbg.py
 in Colab (Runtime → Change runtime type → GPU). This produces dinov2_feats.csv for train and test, respectively.
+
 
 Step 3: Assembly state estimation
 Run Assembly_state_estimation.py. It trains the part classifiers, applies HMM smoothing, 
 and reports the progress MAE and Macro-F1 on the test recording, with the progress curve, 
 confusion matrices, and feature importance.
 
+
 Step 4: Operator stall indicator
 Run Indicators.py. It reuses the Assembly state estimation progress and the gaze and hand features to
 compute the  stall score and plots it.
 
 Update the file paths at the top of each script to your local paths before running.
+
 
 
 Requirements
