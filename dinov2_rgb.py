@@ -23,7 +23,7 @@ import os, numpy as np, pandas as pd, torch, time
 from torchvision import transforms
 from PIL import Image
 
-CSV_PATH = "/content/drive/MyDrive/XR-rbg/merge.csv" # The features from motion modality
+CSV_PATH = "/content/drive/MyDrive/XR-rbg/merge.csv" # The features from motion modality, which are obtained from Merge_data.py
 RGB_ROOT = "/content/drive/MyDrive/XR-rbg/partA_rbg" # The RGB iamge
 OUT_CSV  = "/content/drive/MyDrive/XR-rbg/dinov2_feats.csv" # The output path
 IMG_SIZE = 224
