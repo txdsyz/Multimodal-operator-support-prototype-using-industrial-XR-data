@@ -1,4 +1,4 @@
-1.Multimodal Operator-Support Prototype on IndustReal
+**1.Multimodal Operator-Support Prototype on IndustReal**
 
 A prototype pipeline that estimates assembly state and an operator stall indicator from
 HoloLens 2 egocentric data (IndustReal). It has two parts:
@@ -12,7 +12,7 @@ report [Report.pdf](Report.pdf)
 
 
 
-2.How to run?
+**2.How to run?**
 
 The scripts run in order. Steps 1 and 2 prepare the data; steps 3 and 4 are the two parts.
 
@@ -41,7 +41,7 @@ Update the file paths at the top of each script to your local paths before runni
 
 
 
-3.Requirements
+**3.Requirements**
 
 The three local scripts need the packages in requirements.txt:
 
@@ -51,7 +51,7 @@ The RGB feature extraction (dinov2_rbg.py) runs on Colab, where torch, torchvisi
 and Pillow are already available.
 
 
-4.Data
+**4.Data**
 
 This work uses a subset of the IndustReal dataset (Schoonbeek et al., 2024). The training set is four operators' recordings(22_assy_0_1, 22_assy_2_3, 25_assy_0_1, 25_assy_2_1); 
 the test set is one separate recording (27_assy_0_1) from an operator not seen during training.
