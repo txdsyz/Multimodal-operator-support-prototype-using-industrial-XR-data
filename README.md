@@ -19,7 +19,7 @@ The scripts run in order. Steps 1 and 2 prepare the data; steps 3 and 4 are the 
 
 Step 1: Merge sensor data 
 Place the recording folders under data/ (each with gaze.csv, hands.csv, pose.csv,
-PSR_labels.csv), then run Merge_data.py. This produces the merged motion table.
+PSR_labels.csv), then run Merge_data.py. This produces the merged motion table.//
 
 Step 2: Extract RGB features (Google Colab, GPU)
 Upload the merged table and the RGB image frames to Google Drive, then run dinov2_rbg.py
