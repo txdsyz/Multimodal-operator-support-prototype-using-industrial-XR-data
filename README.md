@@ -27,13 +27,13 @@ Upload the merged table and the RGB image frames to Google Drive, then run dinov
 in Colab (Runtime → Change runtime type → GPU). This produces dinov2_feats.csv for train and test, respectively.
 
 
-Step 3: Assembly state estimation
+Step 3: Assembly state estimation (Part A)
 Run Assembly_state_estimation.py. It trains the part classifiers, applies HMM smoothing, 
 and reports the progress MAE and Macro-F1 on the test recording, with the progress curve, 
 confusion matrices, and feature importance.
 
 
-Step 4: Operator stall indicator
+Step 4: Operator stall indicator (pARTB)
 Run Indicators.py. It reuses the Assembly state estimation progress and the gaze and hand features to
 compute the  stall score and plots it.
 
