@@ -25,7 +25,7 @@ TRAIN_CSV    = os.path.join(DATA_DIR, "train", "merge.csv")
 TRAIN_DINOV2 = os.path.join(DATA_DIR, "train", "dinov2_feats.csv")
 TEST_CSV     = os.path.join(DATA_DIR, "test", "test.csv")
 TEST_DINOV2  = os.path.join(DATA_DIR, "test", "dinov2_feats_test.csv")
-AR_PATH      = os.path.join(DATA_DIR, "test", "AR_labels.csv")
+
 
 W=30
 CORR_THRESH=0.9
