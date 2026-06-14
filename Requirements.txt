@@ -1,0 +1,12 @@
+# Local pipeline (Merge_data.py, Assembly_state_estimation.py, Indicators.py)
+pandas
+numpy
+lightgbm
+scikit-learn
+matplotlib
+
+# RGB feature extraction (dinov2_rbg.py) runs on Google Colab with GPU(T4).
+# These are pre-installed on Colab and are listed here only for reference:
+# torch
+# torchvision
+# Pillow
