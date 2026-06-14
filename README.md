@@ -7,7 +7,7 @@ HoloLens 2 egocentric data (IndustReal). It has two parts:
 
 
 A full description of the problem formulation, method, results, and limitations is in the
-report (report.pdf)
+report [Report.pdf](Report.pdf)
 
 
 How to run?
