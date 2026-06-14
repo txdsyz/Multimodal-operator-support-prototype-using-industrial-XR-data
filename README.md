@@ -8,6 +8,8 @@ HoloLens 2 egocentric data (IndustReal). It has two parts:
 
 A full description of the problem formulation, method, results, and limitations is in the
 report [Report.pdf](Report.pdf)
+<img width="1769" height="916" alt="method" src="https://github.com/user-attachments/assets/43e03bc2-8714-47d1-997f-3a79ff3c74dd" />
+
 
 
 How to run?
