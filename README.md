@@ -33,7 +33,7 @@ and reports the progress MAE and Macro-F1 on the test recording, with the progre
 confusion matrices, and feature importance.
 
 
-Step 4: Operator stall indicator (pARTB)
+Step 4: Operator stall indicator (Part B)
 Run Indicators.py. It reuses the Assembly state estimation progress and the gaze and hand features to
 compute the  stall score and plots it.
 
